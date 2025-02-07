@@ -102,17 +102,21 @@
             flex-wrap: wrap;
             max-width: 60%;
             margin: auto;
+            position: relative;
+        }
+        .pricing-group div {
+            position: relative;
+            display: inline-block;
         }
         .pricing-group img {
             width: 22%;
         }
         .pricing-button {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .pricing-button img {
-            width: 10%;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
         }
     </style>
 </head>
@@ -155,14 +159,22 @@
     </div>
 
     <div class="section pricing-group">
-        <img src="05_02.png" alt="小蜜蜂畅游版">
-        <img src="05_03.png" alt="工蜂极速版">
-        <img src="05_04.png" alt="蜂王尊享版">
-        <img src="05_05.png" alt="蜂群无界版">
-    </div>
-    
-    <div class="pricing-button">
-        <img src="05-06.png" alt="立即购买">
+        <div>
+            <img src="05_02.png" alt="小蜜蜂畅游版">
+            <img src="05-06.png" class="pricing-button" alt="立即购买">
+        </div>
+        <div>
+            <img src="05_03.png" alt="工蜂极速版">
+            <img src="05-06.png" class="pricing-button" alt="立即购买">
+        </div>
+        <div>
+            <img src="05_04.png" alt="蜂王尊享版">
+            <img src="05-06.png" class="pricing-button" alt="立即购买">
+        </div>
+        <div>
+            <img src="05_05.png" alt="蜂群无界版">
+            <img src="05-06.png" class="pricing-button" alt="立即购买">
+        </div>
     </div>
 
     <div class="footer">
