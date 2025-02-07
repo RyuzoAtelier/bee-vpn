@@ -9,139 +9,112 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            color: black;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
         .header {
-            background: white;
-            padding: 20px;
+            background: black;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
         }
         .header img {
             height: 50px;
         }
-        .button {
-            background-color: #ffcc00;
-            color: black;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons img {
+            height: 40px;
+        }
+        .banner {
+            text-align: center;
+            background: url('top-banner.png') no-repeat center;
+            background-size: cover;
+            padding: 80px 0;
         }
         .banner img {
-            width: 100%;
-            height: auto;
+            width: 60%;
         }
-        .content {
+        .section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .features {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            padding: 20px;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .content img {
-            max-width: 80%;
-            height: auto;
-        }
-        .feature-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            padding: 20px;
-        }
-        .feature-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1100px;
-            width: 100%;
-            padding: 20px;
-        }
-        .feature-item img {
-            max-width: 50%;
-            height: auto;
-        }
-        .feature-item .text {
-            max-width: 40%;
-            text-align: left;
+        .features img {
+            width: 30%;
         }
         .plans {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            padding: 20px;
+            flex-wrap: wrap;
         }
-        .plan-item {
-            width: 250px;
-            text-align: center;
-        }
-        .plan-item img {
-            width: 100%;
-            height: auto;
-        }
-        .buy-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+        .plans img {
+            width: 20%;
         }
         .footer {
-            background: white;
+            text-align: center;
+            background: black;
+            color: white;
             padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header container">
+    <div class="header">
         <img src="LOGO.png" alt="小蜜蜂VPN">
-        <div>
-            <a href="#" class="button"><img src="top-bn-2_01.png" alt="创建用户"></a>
-            <a href="#" class="button"><img src="top-bn-2_02.png" alt="购买套餐"></a>
+        <div class="buttons">
+            <img src="top-bn-1_01.png" alt="创建账户">
+            <img src="top-bn-1_02.png" alt="购买套餐">
         </div>
     </div>
+
     <div class="banner">
-        <img src="top-banner.png" alt="高速、安全、无界的上网体验">
+        <img src="top-banner-word.png" alt="高速、安全、无界的上网体验">
     </div>
-    <div class="feature-section">
-        <div class="feature-item">
-            <div class="text">
-                <h2>隐私保护，安全无忧</h2>
-                <p>军工级加密技术，<br>多重防护，<br>守护你的网络隐私！</p>
-            </div>
-            <img src="02_01.png" alt="隐私保护">
-        </div>
-        <div class="feature-item">
-            <img src="03_01.png" alt="极速加速">
-            <div class="text">
-                <h2>极速加速，网络如飞</h2>
-                <p>专属优化线路，<br>低延迟、不卡顿，<br>体验超顺畅！</p>
-            </div>
-        </div>
+
+    <div class="section">
+        <img src="01_01.png" alt="连接全球的高质量网络">
+        <img src="01_02.png" alt="社交媒体">
     </div>
-    <div class="plans">
-        <div class="plan-item"><img src="05_02.png" alt="小蜜蜂畅游版"></div>
-        <div class="plan-item"><img src="05_03.png" alt="工蜂标准版"></div>
-        <div class="plan-item"><img src="05_04.png" alt="蜂王尊享版"></div>
-        <div class="plan-item"><img src="05_05.png" alt="蜂巢无极版"></div>
+
+    <div class="section features">
+        <img src="02_01.png" alt="隐私保护">
+        <img src="02_02.png" alt="隐私保护图片">
     </div>
-    <div class="buy-buttons">
-        <a href="#" class="button">立即购买</a>
-        <a href="#" class="button">立即购买</a>
-        <a href="#" class="button">立即购买</a>
-        <a href="#" class="button">立即购买</a>
+
+    <div class="section features">
+        <img src="03_01.png" alt="极速加速">
+        <img src="03_02.png" alt="火箭加速">
     </div>
+
+    <div class="section features">
+        <img src="04_01.png" alt="多设备支持">
+        <img src="04_02.png" alt="游戏专属加速">
+        <img src="04_03.png" alt="技术团队支持">
+    </div>
+
+    <div class="section">
+        <img src="05_01.png" alt="订阅套餐">
+    </div>
+
+    <div class="section plans">
+        <img src="05_02.png" alt="小蜜蜂畅游版">
+        <img src="05_03.png" alt="工蜂极速版">
+        <img src="05_04.png" alt="蜂王尊享版">
+        <img src="05_05.png" alt="蜂群无界版">
+    </div>
+
     <div class="footer">
-        <img src="bg.png" alt="小蜜蜂VPN">
+        <img src="下.png" alt="小蜜蜂VPN版权">
     </div>
 </body>
 </html>
