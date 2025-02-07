@@ -59,7 +59,7 @@
             z-index: 5;
         }
         .banner img {
-            width: 86%; /* 再次放大20% */
+            width: 86%;
             display: block;
         }
         .section {
@@ -68,48 +68,21 @@
             position: relative;
             z-index: 1;
         }
-        .section:first-of-type {
-            margin-top: 50px;
-        }
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .features img {
-            width: 30%;
-        }
-        .plans {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .plans img {
-            width: 20%;
-        }
-        .devices {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            max-width: 70%;
+        .section img {
+            width: 50%;
+            display: block;
             margin: auto;
         }
-        .devices img {
-            width: 28%;
+        .features img,
+        .devices img,
+        .plans img {
+            width: 30%;
         }
         .footer {
             text-align: center;
             background: black;
             color: white;
             padding: 20px;
-        }
-        .wide-image {
-            width: 50%; /* 調整01_02的寬度與其他區塊視覺一致 */
-            display: block;
-            margin: auto;
         }
     </style>
 </head>
@@ -128,7 +101,7 @@
 
     <div class="section">
         <img src="01_01.png" alt="连接全球的高质量网络">
-        <img src="01_02.png" alt="社交媒体" class="wide-image">
+        <img src="01_02.png" alt="社交媒体">
     </div>
 
     <div class="section features">
