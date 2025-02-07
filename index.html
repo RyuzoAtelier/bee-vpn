@@ -73,16 +73,19 @@
             display: block;
             margin: auto;
         }
-        .features img,
-        .devices img,
-        .plans img {
-            width: 30%;
+        .horizontal-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            max-width: 50%;
+            margin: auto;
         }
-        .footer {
-            text-align: center;
-            background: black;
-            color: white;
-            padding: 20px;
+        .horizontal-group img {
+            width: 48%;
+        }
+        .horizontal-group-large img {
+            width: 32%;
         }
     </style>
 </head>
@@ -104,17 +107,17 @@
         <img src="01_02.png" alt="社交媒体">
     </div>
 
-    <div class="section features">
+    <div class="section horizontal-group">
         <img src="02_01.png" alt="隐私保护">
         <img src="02_02.png" alt="隐私保护图片">
     </div>
 
-    <div class="section features">
+    <div class="section horizontal-group">
         <img src="03_01.png" alt="极速加速">
         <img src="03_02.png" alt="火箭加速">
     </div>
 
-    <div class="section devices">
+    <div class="section horizontal-group-large">
         <img src="04_01.png" alt="多设备支持">
         <img src="04_02.png" alt="游戏专属加速">
         <img src="04_03.png" alt="技术团队支持">
@@ -124,7 +127,7 @@
         <img src="05_01.png" alt="订阅套餐">
     </div>
 
-    <div class="section plans">
+    <div class="section horizontal-group-large">
         <img src="05_02.png" alt="小蜜蜂畅游版">
         <img src="05_03.png" alt="工蜂极速版">
         <img src="05_04.png" alt="蜂王尊享版">
