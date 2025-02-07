@@ -51,6 +51,29 @@
             max-width: 80%;
             height: auto;
         }
+        .feature-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+        }
+        .feature-item img {
+            max-width: 40%;
+            height: auto;
+        }
+        .feature-item .text {
+            max-width: 50%;
+            text-align: left;
+        }
         .plans {
             display: flex;
             flex-wrap: wrap;
@@ -89,13 +112,21 @@
     <div class="banner">
         <img src="top-banner.png" alt="高速、安全、无界的上网体验">
     </div>
-    <div class="content">
-        <img src="01_01.png" alt="连接全球的高质量网络">
-        <img src="01_02.png" alt="社交媒体访问">
-        <img src="02_01.png" alt="隐私保护，安全无忧">
-        <img src="02_02.png" alt="安全防护">
-        <img src="03_01.png" alt="极速加速，网络如飞">
-        <img src="03_02.png" alt="低延迟网络">
+    <div class="feature-section">
+        <div class="feature-item">
+            <div class="text">
+                <h2>隐私保护，安全无忧</h2>
+                <p>军工级加密技术，<br>多重防护，<br>守护你的网络隐私！</p>
+            </div>
+            <img src="02_01.png" alt="隐私保护">
+        </div>
+        <div class="feature-item">
+            <img src="03_01.png" alt="极速加速">
+            <div class="text">
+                <h2>极速加速，网络如飞</h2>
+                <p>专属优化线路，<br>低延迟、不卡顿，<br>体验超顺畅！</p>
+            </div>
+        </div>
     </div>
     <div class="plans">
         <div class="plan-item"><img src="05_02.png" alt="小蜜蜂畅游版"></div>
